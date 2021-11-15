@@ -1,0 +1,113 @@
+<html>
+
+<head>
+	<title>About Us</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/482e0ddda0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section>
+		<div class="container">
+			<div class="slide-container active">
+				<div class="slide">
+					<div class="content">
+						<h3>ORIGIN OF THE LOGO</h3>
+						<p>The term 'Bon Voyage' is a French expression that translates to express good wishes to
+							someone about to go on a journey. As a company who specializes in making people feel at ease
+							when booking their flights, our services will ensure them to have a safe flight without
+							experiencing hassle, and making them feel safe. The airplane that can be seen in the logo is
+							used to represent the airline. Lastly, the image that shows Philippine islands represents
+							the origin of the venture, and the Filipino people who are behind it and will benefit from
+							it.​</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\skye.mp4" autoplay muted loop class="active"></video>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<br><br><br><br><br><br>
+						<h3>OUR TEAM</h3>
+					</div>
+					<img src="1.png" class="img1">
+					<h3 class="profile1">Erhesto Cuadra</h3>
+					<img src="2.png" class="img2">
+					<h3 class="profile2">Dan Sibug</h3>
+					<img src="3.png" class="img3">
+					<h3 class="profile3">Ron Rondilla</h3>
+					<img src="4.png" class="img4">
+					<h3 class="profile4">Prince Aaron Gloriane</h3>
+					<img src="5.png" class="img5">
+					<h3 class="profile5">Angeline Hibe</h3>
+					<img src="6.png" class="img6">
+					<h3 class="profile6">Franz Carlos</h3>
+					<video src="E:\Bonvoyage\Project\Assets\chblossom_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>BACKGROUND OF THE COMPANY</h3>
+						<p>Bon Voyage Airlines (BVA) is an online platform that was made in 2021 to respond to the
+							changing preferences of travelers from local and international schemes. BVA is a recently
+							launched as an online travel agency (OTA) that is based in the Philippines where people can
+							book their ticket through various locations, both domestic and international flights. Our
+							duty is to provide our consumers with the lowest fare in their dream destination and then
+							book directly with without hassle in their chosen airlines.​</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\cebu_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+
+			<header id="navbar">
+				<a href="index.html" class="logo"><img src="E:\Bonvoyage\Project\Assets\logo.png" class="logo"></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="booking.html">Booking</a></li>
+					<li><a href="about.html" class="active">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</header>
+		</div>
+
+		<div class="vertical-bar">
+			<div class="social-icons">
+				<a href="https://www.facebook.com/Bon-Voyage-Airlines-107925601710886/?ref=pages_you_manage"
+					target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/bon_voyage_airlines/" target="_blank"><i
+						class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/r_Daedalus?fbclid=IwAR0L7cZLlYE7KgNbqxi35M2U8wgSQwEddvgBxXbKqsBHWUzmwArrDqVRGcI"
+					target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="ctrl">
+			<audio controls volume="1" autoplay loop>
+				<source src="E:\Bonvoyage\Project\Assets\SummerLove.mp3" type="audio/mp3">
+			</audio>
+			<div><i class="fas fa-chevron-left" id="prev" onclick="next();"></i></div>
+			<div><i class="fas fa-chevron-right" id="next" onclick="prev();"></i></div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		let slides = document.querySelectorAll('.slide-container');
+		let index = 0;
+
+		function next() {
+			slides[index].classList.remove('active');
+			index = (index + 1) % slides.length;
+			slides[index].classList.add('active');
+		}
+
+		function prev() {
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length;
+			slides[index].classList.add('active');
+		}
+	</script>
+</body>
+
+</html>

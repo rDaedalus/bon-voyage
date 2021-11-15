@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title>Booking</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/482e0ddda0.js" crossorigin="anonymous"></script>
+</head>
+
+<script type="text/javascript">
+
+
+    function cview() {
+
+        fr = form1.from.value;
+        t = form1.t.value;
+        departured = form1.departuredate.value;
+        departuret = form1.departuretime.value;
+        airl = form1.airline.value;
+        seat = form1.seating.value;
+        adul = form1.adult.value;
+        child = form1.children.value;
+        inf = form1.infant.value;
+        ride = form1.r.value;
+        retdate = form1.returndate.value;
+        rettime = form1.returntime.value;
+        mess = form1.message.value;
+        nam = form1.name.value;
+        phon = form1.phone.value;
+        mail = form1.email.value;
+
+        mul1 = parseInt(form1.from.value) + parseInt(form1.t.value) + parseInt(form1.seating.value);
+
+        document.write("<link rel=stylesheet type=text/css href=style.css>");
+        document.write("<body class=booking1><section><div class=container><header id=navbar><a href=index.html class=logo><img src=logo.png class=logo></a><ul><li><a href=index.html>Home</a></li><li><a href=booking.html class=active>Booking</a></li><li><a href=about.html>About</a></li><li><a href=contact.html>Contact</a></li></ul></header></div><video src=drone.mp4 autoplay muted loop class=bookingvid></video></section><form class=form-group name=form1><div id=form><h1>Airline Booking Form</h1><h3 class=text-white>Booking Details</h3><div id=input><h2>Full Name: " + nam + "</h2><h2>Email: " + mail + "</h2><h2>Phone Number: " + phon + "</h2><h2>Total Fare: Php" + mul1 + "</h2><h3 class=text-white></h3><center><h2>Payment procedure has been sent to your email : <br>" + mail + "</h2><br><h2>Thank you for submitting the form, we will contact you as soon as we find the best flight that you are looking for. Please expect a response in 1-2 business hours. Thank you and have a great day!</h2></center></div></INPUT><a href=booking.html><button type=button class=button4 >Go Back</button></a></div></div></form></body>")
+    }
+</script>
+
+<body class="booking1">
+    <section>
+        <div class="container">
+            <header id="navbar">
+                <a href="index.html" class="logo"><img src="E:\Bonvoyage\Project\Assets\logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </header>
+        </div>
+        <video src="E:\Bonvoyage\Project\Assets\drone.mp4" autoplay muted loop class="bookingvid"></video>
+        <form class="form-group" name="form1">
+            <div id="form">
+                <h1>Airline Booking Form</h1>
+                <h3 class="text-white">Booking Details</h3>
+                <div id="input">
+                    <select id="input-group" style="background: black;" name="from">
+                        <option value="">From</option>
+                        <option value="2500">Bacolod</option>
+                        <option value="2500">Bohol</option>
+                        <option value="2500">Boracay (Caticlan)</option>
+                        <option value="2500">Butuan</option>
+                        <option value="2500">Cagayan de Oro</option>
+                        <option value="2500">Calbayog</option>
+                        <option value="2500">Camiguin</option>
+                        <option value="2500">Cauayan</option>
+                        <option value="2500">Cebu</option>
+                        <option value="2500">Clark</option>
+                        <option value="2500">Coron (Busuanga)</option>
+                        <option value="2500">Cotabato</option>
+                        <option value="2500">Davao</option>
+                        <option value="2500">Dipolog</option>
+                        <option value="2500">Dumaguete</option>
+                        <option value="2500">General Santos</option>
+                        <option value="2500">Iloilo</option>
+                        <option value="2500">Kalibo</option>
+                        <option value="2500">Legazpi</option>
+                        <option value="2500">Manila</option>
+                        <option value="2500">Marinduque</option>
+                        <option value="2500">Masbate</option>
+                        <option value="2500">Naga</option>
+                        <option value="2500">Ozamis</option>
+                        <option value="2500">Pagadian</option>
+                        <option value="2500">Puerto Princes</option>
+                        <option value="2500">Roxas</option>
+                        <option value="2500">San Jose (Mindoro)</option>
+                        <option value="2500">Siargao</option>
+                        <option value="2500">Surigao</option>
+                        <option value="2500">Tablas</option>
+                        <option value="2500">Tacloban</option>
+                        <option value="2500">Tawi-tawi</option>
+                        <option value="2500">Tuguegarao</option>
+                        <option value="2500">Virac</option>
+                        <option value="2500">Zambuanga</option>
+                    </select>
+                    <select id="input-group" style="background: black;" name="t">
+                        <option value="">To</option>
+                        <option value="2500">Bacolod</option>
+                        <option value="2500">Bohol</option>
+                        <option value="2500">Boracay (Caticlan)</option>
+                        <option value="2500">Butuan</option>
+                        <option value="2500">Cagayan de Oro</option>
+                        <option value="2500">Calbayog</option>
+                        <option value="2500">Camiguin</option>
+                        <option value="2500">Cauayan</option>
+                        <option value="2500">Cebu</option>
+                        <option value="2500">Clark</option>
+                        <option value="2500">Coron (Busuanga)</option>
+                        <option value="2500">Cotabato</option>
+                        <option value="2500">Davao</option>
+                        <option value="2500">Dipolog</option>
+                        <option value="2500">Dumaguete</option>
+                        <option value="2500">General Santos</option>
+                        <option value="2500">Iloilo</option>
+                        <option value="2500">Kalibo</option>
+                        <option value="2500">Legazpi</option>
+                        <option value="2500">Manila</option>
+                        <option value="2500">Marinduque</option>
+                        <option value="2500">Masbate</option>
+                        <option value="2500">Naga</option>
+                        <option value="2500">Ozamis</option>
+                        <option value="2500">Pagadian</option>
+                        <option value="2500">Puerto Princes</option>
+                        <option value="2500">Roxas</option>
+                        <option value="2500">San Jose (Mindoro)</option>
+                        <option value="2500">Siargao</option>
+                        <option value="2500">Surigao</option>
+                        <option value="2500">Tablas</option>
+                        <option value="2500">Tacloban</option>
+                        <option value="2500">Tawi-tawi</option>
+                        <option value="2500">Tuguegarao</option>
+                        <option value="2500">Virac</option>
+                        <option value="2500">Zambuanga</option>
+                    </select>
+                    <label>Departure Date</label>
+                    <input type="date" id="input-group" placeholder="Departure Date" name="departuredate"><br>
+                    <label>Departure Time</label>
+                    <input type="time" id="input-group" placeholder="Departure Time" name="departuretime">
+                    <select id="input-group" style="background: black;" name="airline">
+                        <option value="">Preffered Airline</option>
+                        <option value="">NAIA (MNL)</option>
+                        <option value="">CEBU PACIFIC AIR</option>
+                        <option value="">Puerto Princesa International Airport</option>
+                        <option value="">Clark International Airport</option>
+                        <option value="">Tuguegarao Airport </option>
+                        <option value="">Cauayan Airport </option>
+                        <option value="">Subic Bay International Airport </option>
+                    </select>
+                    <select id="input-group" style="background: black;" name="seating">
+                        <option value="">Preffered Seating</option>
+                        <option value="500">Economy Class</option>
+                        <option value="2500">Business Class</option>
+                        <option value="5000">First Class</option>
+                    </select>
+                </div>
+
+                <div id="input2">
+                    <input type="number" id="input-group" placeholder="Adult" name="adult">
+                    <input type="number" id="input-group" placeholder="Children(2-11years)" name="children">
+                    <input type="number" id="input-group" placeholder="infant(under 2years)" name="infant">
+                </div>
+
+                <div id="input3">
+                    <span id="input-group" class="text-primary">Select Your Fare</span>
+                    <input type="radio" id="input-group" name="r" value=".2">
+                    <label class="text-white" for="input-group">One Way</label>
+                    <input type="radio" id="input-group" name="r" value=".6">
+                    <label class="text-white" for="input-group">Round Trip</label>
+                </div>
+
+                <div id="input4">
+                    <label>Return Date</label>
+                    <input type="date" id="input-group" placeholder="Return Date" name="returndate"><br>
+                    <label>Return Time</label>
+                    <input type="time" id="input-group" placeholder="Return time" name="returntime">
+                    <input type="text" id="input-group" placeholder="Any Message" name="message">
+                </div>
+
+                <div id="input5">
+                    <h3 class="text-white">Personal Details</h3>
+                </div>
+                <div id="input6">
+                    <input type="text" id="input-group" placeholder="Full Name" name="name">
+                    <input type="number" id="input-group" placeholder="Phone Number" name="phone">
+                    <input type="email" id="input-group" placeholder="Email" name="email">
+                </div>
+
+                <INPUT type="button" class="button1" onclick="cview()" value="Submit"></INPUT>
+                <button type="reset" class="button2">Clear Form</button>
+            </div>
+
+        </form>
+
+        <div class="vertical-bar">
+            <div class="social-icons">
+                <a href="https://www.facebook.com/Bon-Voyage-Airlines-107925601710886/?ref=pages_you_manage"
+                    target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bon_voyage_airlines/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/r_Daedalus?fbclid=IwAR0L7cZLlYE7KgNbqxi35M2U8wgSQwEddvgBxXbKqsBHWUzmwArrDqVRGcI"
+                    target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+</body>
+
+</html>

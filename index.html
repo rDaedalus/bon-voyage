@@ -1,0 +1,130 @@
+<html>
+
+<head>
+	<title>Bon Voyage Airlines</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/482e0ddda0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section>
+		<div class="container">
+			<div class="slide-container active">
+				<div class="slide">
+					<div class="content">
+						<h3>Manila</h3>
+						<p>the capital of the Philippines</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\mnl_Trim.mp4" autoplay muted loop class="active"></video>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>Cebu</h3>
+						<p>nicknamed "the Queen City of the South", the oldest city and first capital of the
+							Philippines.</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\cebu_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>Puerto Princesa</h3>
+						<p>is a coastal city on Palawan Island in the western Philippines.</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\puertoprinsesa_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>Clark</h3>
+						<p>forms the hub for business, industry, aviation, education, and tourism in the Philippines as
+							well as a leisure, fitness, entertainment and gaming center of Central Luzon.</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\clark_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>Tuguegarao</h3>
+						<p>is also noted for being the warmest city in the Philippines.</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\tuguegarao_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>Subic</h3>
+						<p>is known for its amazing beaches, an inflatable playground which is the biggest in Asia.</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\subic.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>Cauayan</h3>
+						<p>it was famous in the Spanish regime as a part of the tobacco industry.</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\cauayan_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+
+			<header id="navbar">
+				<a href="index.html" class="logo"><img src="E:\Bonvoyage\Project\Assets\logo.png" class="logo"></a>
+				<ul>
+					<li><a href="index.html" class="active">Home</a></li>
+					<li><a href="booking.html">Booking</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</header>
+		</div>
+		<div class="vertical-bar">
+			<div class="social-icons">
+				<a href="https://www.facebook.com/Bon-Voyage-Airlines-107925601710886/?ref=pages_you_manage"
+					target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/bon_voyage_airlines/" target="_blank"><i
+						class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/r_Daedalus?fbclid=IwAR0L7cZLlYE7KgNbqxi35M2U8wgSQwEddvgBxXbKqsBHWUzmwArrDqVRGcI"
+					target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="ctrl">
+			<audio controls volume="1" autoplay loop>
+				<source src="E:\Bonvoyage\Project\Assets\SummerLove.mp3" type="audio/mp3">
+			</audio>
+			<div><i class="fas fa-chevron-left" id="prev" onclick="next();"></i></div>
+			<div><i class="fas fa-chevron-right" id="next" onclick="prev();"></i></div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		let slides = document.querySelectorAll('.slide-container');
+		let index = 0;
+
+		function next() {
+			slides[index].classList.remove('active');
+			index = (index + 1) % slides.length;
+			slides[index].classList.add('active');
+		}
+
+		function prev() {
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length;
+			slides[index].classList.add('active');
+		}
+	</script>
+</body>
+
+</html>

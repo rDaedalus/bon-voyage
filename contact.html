@@ -1,0 +1,74 @@
+<html>
+
+<head>
+	<title>Contact Us</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/482e0ddda0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<section>
+		<div class="container">
+			<div class="slide-container active">
+				<div class="slide">
+					<video src="E:\Bonvoyage\Project\Assets\contactuss_Trim.mp4" autoplay muted loop
+						class="active"></video>
+				</div>
+			</div>
+			<div class="slide-container">
+				<div class="slide">
+					<div class="content">
+						<h3>Cebu</h3>
+						<p>lorem ipsum eme</p>
+					</div>
+					<video src="E:\Bonvoyage\Project\Assets\cebu_Trim.mp4" autoplay muted loop></video>
+				</div>
+			</div>
+			<header id="navbar">
+				<a href="index.html" class="logo"><img src="E:\Bonvoyage\Project\Assets\logo.png" class="logo"></a>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="booking.html">Booking</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html" class="active">Contact</a></li>
+				</ul>
+			</header>
+		</div>
+		<div class="vertical-bar2">
+			<div class="social-icons2">
+				<a href="https://www.facebook.com/Bon-Voyage-Airlines-107925601710886/?ref=pages_you_manage"
+					target="_blank"><i class="fab fa-facebook"></i></a>
+				<a href="https://www.instagram.com/bon_voyage_airlines/" target="_blank"><i
+						class="fab fa-instagram"></i></a>
+				<a href="https://twitter.com/r_Daedalus?fbclid=IwAR0L7cZLlYE7KgNbqxi35M2U8wgSQwEddvgBxXbKqsBHWUzmwArrDqVRGcI"
+					target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+		</div>
+		<div class="ctrl">
+			<audio controls volume="1" autoplay loop>
+				<source src="E:\Bonvoyage\Project\Assets\SummerLove.mp3" type="audio/mp3">
+			</audio>
+			<div><i class="fas fa-chevron-left" id="prev" onclick="next();"></i></div>
+			<div><i class="fas fa-chevron-right" id="next" onclick="prev();"></i></div>
+		</div>
+	</section>
+	<script type="text/javascript">
+		let slides = document.querySelectorAll('.slide-container');
+		let index = 0;
+
+		function next() {
+			slides[index].classList.remove('active');
+			index = (index + 1) % slides.length;
+			slides[index].classList.add('active');
+		}
+
+		function prev() {
+			slides[index].classList.remove('active');
+			index = (index - 1 + slides.length) % slides.length;
+			slides[index].classList.add('active');
+		}
+	</script>
+</body>
+
+</html>
