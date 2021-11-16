@@ -19,8 +19,6 @@
 			<div class="slide-container">
 				<div class="slide">
 					<div class="content">
-						<h3>Cebu</h3>
-						<p>lorem ipsum eme</p>
 					</div>
 					<video src="Assets\cebu_Trim.mp4" autoplay muted loop></video>
 				</div>
@@ -49,26 +47,8 @@
 			<audio controls volume="1" autoplay loop>
 				<source src="Assets\SummerLove.mp3" type="audio/mp3">
 			</audio>
-			<div><i class="fas fa-chevron-left" id="prev" onclick="next();"></i></div>
-			<div><i class="fas fa-chevron-right" id="next" onclick="prev();"></i></div>
 		</div>
 	</section>
-	<script type="text/javascript">
-		let slides = document.querySelectorAll('.slide-container');
-		let index = 0;
-
-		function next() {
-			slides[index].classList.remove('active');
-			index = (index + 1) % slides.length;
-			slides[index].classList.add('active');
-		}
-
-		function prev() {
-			slides[index].classList.remove('active');
-			index = (index - 1 + slides.length) % slides.length;
-			slides[index].classList.add('active');
-		}
-	</script>
 </body>
 
 </html>
